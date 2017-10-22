@@ -6,6 +6,12 @@ When you initialize a repository, git begins to track changes from an "empty" se
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+The staging area is different from the working directory because it includes a snapshot of changes that were in individual file(s) in the working directory at one time.
+
+The staging area is different from the repository because the repository does not yet contain the bundles changes that are present in the staging area, and we'll have to commit the changes in order to bring the two in line.
+
+The value of the staging area is that you can specify exactly the changed files you want to add to the repository, and check that all necessary changed files are ready to be added to the repository in one single commit (and nothing you don't want is in there) -- all before syncing to the repository, which may break your project if done without all the necessary changes (or a couple of superfluous ones).
+
 How can you use the staging area to make sure you have one commit per logical
 change?
 
