@@ -1,27 +1,38 @@
 Q: What happens when you initialize a repository? Why do you need to do it?
 
-When you initialize a repository, git begins to track changes from an "empty" set of files. Initializing a repository is necessary so that git can begin tracking changes from the initial "commit" of your files -- the first commit will be the first version of your project that git will compare moving forwards.
+A: When you initialize a repository, git begins to track changes from an "empty" set of files. Initializing a repository is necessary so that git can begin tracking changes from the initial "commit" of your files -- the first commit will be the first version of your project that git will compare moving forwards.
 
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area is different from the working directory because it includes a snapshot of changes that were in individual file(s) in the working directory at one time.
+A: The staging area is different from the working directory because it includes a snapshot of changes that were in individual file(s) in the working directory at one time.
 
 The staging area is different from the repository because the repository does not yet contain the bundles changes that are present in the staging area, and we'll have to commit the changes in order to bring the two in line.
 
 The value of the staging area is that you can specify exactly the changed files you want to add to the repository, and check that all necessary changed files are ready to be added to the repository in one single commit (and nothing you don't want is in there) -- all before syncing to the repository, which may break your project if done without all the necessary changes (or a couple of superfluous ones).
 
-How can you use the staging area to make sure you have one commit per logical
+Q: How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
+A: You can always check between the staging area and the repository to make sure that the prospective commit is indeed
+of a reasonable size.
+
+Q: What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+A: Branches are helpful when you would like to develop new features or versions to your original application, where you do not want to affect the main application until the new feature is completely ready. They allow you to develop the new feature and test it fully before bringing the feature into the master branch and application.
+
+Q: How do the diagrams help you visualize the branch structure?
+
+A: The diagrams help to identify reachable commits within each branch, therby tracking which changes are contained in the branch itself, in comparison to others.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+A: When two branches are merged, the commits on one branch are now found within the other branch, interleaved between one another.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Pros -- merges anything without conflict, saves time
+Cons -- time-intensive conflict resolution, sometimes resolving trivial conflicts.
