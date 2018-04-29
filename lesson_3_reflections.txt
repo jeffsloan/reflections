@@ -2,23 +2,29 @@ When would you want to use a remote repository rather than keeping all your work
 local?
 
     You would want to use a remote repository rather than a local repository if you need to access the repository
-    from multiple computers, or if multiple are working on the same repository. A remote repository allows anyone to be able
-    to access the repository that knows where to look and has the right credentials.
+    from multiple computers, or if multiple people are working on the same repository. A remote repository allows anyone to be able to access the repository that knows where to look and has the right credentials.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    You might want to pull changes manually so that your un-comitted changes in your local repository do not get automatically over-written.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    Forks are a copy of one GitHub repository in another GitHub account.
+    Clones are a copy of one GitHub repository into another place, not just GitHub <> GitHub.
+    Branches are copies of a repository at different points, meant for work on a specific component or feature.
+
+    Use forks to copy a GitHub repository into a personal GitHub account.
+    Use clones to copy a GitHub repository onto a personal computer, make changes on the clone, and then push changes to the GitHub repository.
+    Use branches to copy a local repository up to a specific commit to work on different features, and merge back into the repository before pushing to the GitHub repository.
+
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    The benefit of having a copy of the last known state of the remote stored locally is that you may resolve any merge conflicts knowing that you only need to do so once. You will not have to resolve the merge conflict, pull the updated remote, and then resolve again.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
