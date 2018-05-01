@@ -29,9 +29,11 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    I would collaborate by using Google Docs. Google Docs would be easier in one sense, because Google Docs are ubiquitous. However, Google Docs would "publish" all of our unfinished edits -- meaning that at various times, any code written in the doc could be incomplete. Instead, it would be very helpful to have a version control workflow using GitHub so that we could make edits that are "complete".
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    I would want to make changes in a separate branch rather than directly in master when I have other people working directly on the project. This tactic allows me to resolve merge conflicts directly on my local machines, and test the merged code before creating a pull request into the master branch on the remote.
+
+    I would want to work directly on master when I am the sole contributor to a project. It would allow me marginally more speed and simplicity in my workflow.
